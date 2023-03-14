@@ -17,7 +17,7 @@ article{
     margin-bottom: 1em;
 }
 
-body > header{
+main > header{
     background-color: rgb(200, 193, 0);
     margin-bottom: 1em;
     width: 100%;
@@ -49,21 +49,20 @@ footer{
 /* Versión Tablet*/
 @media (min-width: 720px){
     /*Aquí inician los estilos para Tablet*/
-    body > header{
-        float: left;
-        width: 79%;
+    main > header{
         background-color: rgb(194, 129, 255);
     }
     nav{
-        float: left;
+        display: inline-block;
         width: 20%;
         height: 600px;
         margin-right: 1%;
         background-color: bisque;
     }
     main{
-        float: left;
-        width: 79%;
+        display: inline-block;
+        width: 78%;
+        vertical-align: top;
     }
     article{
         background-color: rgb(255, 158, 158);
@@ -80,7 +79,7 @@ footer{
 /* Versión Laptop*/
 @media (min-width: 1024px){
     /*Aquí inician los estilos para Laptop*/
-    body > header{
+    main > header{
         background-color: rgb(255, 196, 129);
     }
     nav{
